@@ -1,0 +1,298 @@
+/* ----------------------------------------------- */
+/* Created by : SHiV [ #shivskj ]                 */
+/* ----------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+.center {
+  text-align: center;
+  color: #ffffff;
+}
+.wrapper {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+  /*background-color: #000000;*/
+  /*background: linear-gradient(#000000,#0000ff);*/
+  background-image: url("https://eoimages.gsfc.nasa.gov/images/imagerecords/144000/144898/BlackMarble_2016_01deg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  /*background-image: url("map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;*/
+}
+.head {
+  color: #00aeff;
+  /*font-family: 'Karla', sans-serif;*/
+  font-family: 'Lustria', serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.section {
+  /*height: calc(100vh - 40px);*/
+
+  height: 50vh;
+  max-width: 222vw;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.name {
+  width: 70%;
+}
+.text {
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+.icons {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+.fb,
+.ig,
+.lin,
+.git,
+.twit,
+.mail,
+.res {
+  color: #ffffff;
+}
+
+.ico {
+  /*border: 4px double white;
+  border-radius: 50%;*/
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  padding: 11px;
+  position: relative;
+  background-color: #000000;
+  /*background: transparent;*/
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin: 22px 8px;
+}
+
+.ico-res {
+  /*border: 4px double white;
+  border-radius: 50%;*/
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 10px 8px 8px 8px;
+  position: relative;
+  background-color: #000000;
+  /*background: transparent;*/
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin: 0px 8px;
+}
+
+.ico:hover {
+  transform: translateY(-2px);
+}
+
+.ico-res:hover {
+  transform: translateY(-2px);
+}
+.ico:hover .fb {
+  color: rgb(0, 106, 255);
+}
+.ico:hover .lin {
+  color: rgb(0, 170, 255);
+}
+.ico:hover .git {
+  color: rgb(98, 98, 98);
+}
+.ico:hover .ig {
+  color: rgb(255, 0, 38);
+}
+.ico:hover .mail {
+  color: rgb(0, 68, 255);
+}
+.ico:hover .twit {
+  color: rgb(0, 179, 255);
+}
+.ico-res:hover .res {
+  color: white;
+}
+
+#bar {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  width: 40%;
+  height: 40%;
+  -webkit-transition: 0.1s ease all;
+}
+
+@media screen and (max-width: 777px) {
+  .name {
+    width: 100%;
+  }
+  .head {
+    font-size: 9vw;
+    margin-bottom: 0px !important;
+    padding: 0 !important;
+  }
+  .text {
+    font-size: 4vw;
+    margin-bottom: 4px !important;
+    margin-top: 5px !important;
+  }
+  .ico {
+    /*border: 4px double white;
+    border-radius: 50%;*/
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 2px !important;
+    position: relative;
+    background-color: #000000;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 2px 2px !important;
+  }
+  .icons {
+    margin-bottom: 2px;
+  }
+  .ico-res {
+    /*border: 4px double white;
+    border-radius: 50%;*/
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 2px 2px 2px 2px !important;
+    position: relative;
+    background-color: #000000;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 8px 8px !important;
+  }
+
+  .fa-2x {
+    font-size: 1.5em !important;
+  }
+  .fa-3x {
+    font-size: 2em !important;
+  }
+  ul {
+    padding: 0px !important;
+  }
+}
+
+/*-------------------------------------------------------------*/
+
+#bgearth {
+	position: fixed;
+	top: 9vw;
+  bottom: 20%;
+	width: 36vw;
+	right: 10vw;
+  left: -20vw;
+	pointer-events: none;
+  overflow: hidden;
+}
+
+@media (max-width: 999px) {
+	#bgearth {
+		width: 27vw;
+	}	
+}
+
+@media (max-width: 719px) {
+	#bgearth {
+		width: 27vw;
+	}	
+}
+
+@media (max-width: 511px) {
+	#bgearth {
+		width: 27vw;
+	}	
+	header {
+		padding: 9em 0;
+	}
+}
+
+@media (max-width: 399px) {
+	#bgearth {
+		width: 27vw;
+	}
+	header {
+		padding: 8em 0;
+	}
+}
+
+.earth-js {
+	transition: opacity 1.5s ease-in;
+	opacity: 0;
+}
+.earth-js.earth-ready {
+	opacity: 1;
+}
+
+.half-earth {
+	position: relative;
+	overflow: hidden;
+}
+.half-earth::before {
+	content: "none";
+	display: block;
+	padding-top: 50%;
+}
+.half-earth::after {
+	content: "none";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	left: 0;
+	right: 0;
+	z-index: 15;
+	background: linear-gradient(to right, rgb(0, 0, 0) 0%,rgb(0, 0, 0) 30%,rgba(255,255,255,1) 70%,rgb(0, 0, 0) 100%);
+}
+.half-earth > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*By SHiV SKJ*/
