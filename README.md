@@ -1,1 +1,1 @@
-# earthday2022.github.io
+# earthday.github.io
